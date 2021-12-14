@@ -7,11 +7,15 @@
   --base-hue-5: 45;
 
   --shift: 5;
-
+  /* Color black */
   --hue-1: calc(var(--base-hue-1) + var(--shift));
+  /* color dark black */
   --hue-2: calc(var(--base-hue-2) + var(--shift));
+
   --hue-3: calc(var(--base-hue-3) + var(--shift));
+
   --hue-4: calc(var(--base-hue-4) + var(--shift));
+
   --hue-5: calc(var(--base-hue-5) + var(--shift));
 
   --white-hue: var(--hue-1);

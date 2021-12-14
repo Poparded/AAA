@@ -1,0 +1,13 @@
+/* f */
+.card card--success {
+}
+.card card--danger {
+  background-color: var(--hue-1);
+}
+.card > div {
+  background-color: var(--basehue-3 20%, 40%) !important ;
+}
+hr.solid {
+  border-top: 3px solid;
+  color: var(--basehue-3 30%, 20%);
+}
