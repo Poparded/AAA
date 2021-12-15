@@ -18,14 +18,14 @@
 }
 
 
+.card{
+  height: 100rem;
 
+}
 
 .card__header, .card__header--red {
   
-
   background-image: linear-gradient(to bottom right, hsl(var(--hue-3), 50%, 40% ), hsl(var(--hue-3), 50%, 70%));
-  
-
 }
 
 
@@ -43,7 +43,6 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   box-sizing: content-box;
-  height:80rem;
   
 }
 .card__body--red{
@@ -53,21 +52,20 @@
   margin-bottom: 5rem;
   height: 22rem;
   
-  
 }
 .card__body--green{
   
   background-color: var(--white);
   opacity:1; 
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
   height: 22rem;
 }
 .card__body--blue{
-  
+    margin-top:rem;
     background-color: var(--white);
     opacity: 1; 
     margin-bottom: 1rem;
-    height :;
+    height: 22rem;
    
 }
 /* Card red */
