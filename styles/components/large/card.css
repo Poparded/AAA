@@ -19,7 +19,7 @@
 }
 
 .card__body{
-background-color: rgba(white, rgb(255, 255, 255), rgb(255, 255, 255), alpha) ;
+background-color: rgba(255, 255, 255, 0.5);
 /* pacity: 0.8; */
 
 }
