@@ -7,20 +7,20 @@
   --base-hue-5: 45;
 
   --shift: 5;
-  /* Color black */
+  /* Color blue */
   --hue-1: calc(var(--base-hue-1) + var(--shift));
-  /* color dark black */
+  /* color dark purple */
   --hue-2: calc(var(--base-hue-2) + var(--shift));
-
+/*color red*/
   --hue-3: calc(var(--base-hue-3) + var(--shift));
-
+/*color green*/
   --hue-4: calc(var(--base-hue-4) + var(--shift));
-
+/*color gulgrön*/
   --hue-5: calc(var(--base-hue-5) + var(--shift));
-
+/*color */
   --white-hue: var(--hue-1);
   --white: hsl(var(--white-hue), 100%, 96%);
-
+/*color */
   --black-hue: var(--hue-2);
   --black: hsl(var(--black-hue), 12%, 17%);
 }

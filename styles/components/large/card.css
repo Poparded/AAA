@@ -1,13 +1,71 @@
-/* f */
+
 .card card--success {
+  background-color: green;
+  
 }
 .card card--danger {
-  background-color: var(--hue-1);
+/*   background-color: var(--hue-3); */
+  background-color: red;
 }
-.card > div {
-  background-color: hsl(var(--hue-1), 30%, 50%);
+.card{
+  
 }
-hr.solid {
+.card__header {
+ /*  background-color: blue; */
+ 
+ border-top-right-radius: 10px;
+ border-top-left-radius: 10px;
+ margin-top: 4rem;
+}
+
+.card__body{
+background-color: rgba(white, rgb(255, 255, 255), rgb(255, 255, 255), alpha) ;
+/* pacity: 0.8; */
+
+}
+
+/* .card__paragraph, p {
+  opacity: 1.0; 
+} */
+
+/* Card red */
+.card__header--red{
+  /* background-color: hsl(var(--hue-3), 50%, 40%); */
+  background-image: linear-gradient(to bottom right, hsl(var(--hue-3), 50%, 40% ), hsl(var(--hue-3), 50%, 70%));
+  
+
+}
+/* Card green*/
+.card__header--green {
+  background-image: linear-gradient(to bottom right, hsl(var(--hue-4), 50%, 40% ), hsl(var(--hue-4), 50%, 60%));
+  
+}
+/* Card blue */
+.card__header--blue{
+  background-image: linear-gradient(to bottom right, hsl(var(--hue-1), 50%, 40% ), hsl(var(--hue-1), 50%, 70%));
+}
+hr.solid--red {
   border-top: 3px solid;
-  color: var(--basehue-3 30%, 20%);
+  color: hsl(var(--hue-3), 50%, 40%); 
+}
+hr.solid--green {
+  border-top: 3px solid;
+  color: hsl(var(--hue-4), 50%, 60%);
+}
+hr.solid--blue {
+  border-top: 3px solid;
+  color: hsl(var(--hue-1), 70%, 50%);
+}
+.card__button--red {
+  background-color: red hsl(333,)
+  
+}
+
+.card__button--green {
+ background-color: green hsl(153,);
+  
+}
+.card__button--blue {
+  background-color: blue hsl(207);
+  
 }
