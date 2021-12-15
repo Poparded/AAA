@@ -7,34 +7,28 @@
 /*   background-color: var(--hue-3); */
   background-color: red;
 }
-.card{
-  
-}
+
 .card__header {
- /*  background-color: blue; */
+
  
  border-top-right-radius: 10px;
  border-top-left-radius: 10px;
  margin-top: 4rem;
-}
-
-.card__body{
-background-color: rgba(255, 255, 255, 0.5);
-/* pacity: 0.8; */
 
 }
 
-/* .card__paragraph, p {
-  opacity: 1.0; 
-} */
 
-/* Card red */
-.card__header--red{
-  /* background-color: hsl(var(--hue-3), 50%, 40%); */
+
+
+.card__header, .card__header--red {
+  
+
   background-image: linear-gradient(to bottom right, hsl(var(--hue-3), 50%, 40% ), hsl(var(--hue-3), 50%, 70%));
   
 
 }
+
+
 /* Card green*/
 .card__header--green {
   background-image: linear-gradient(to bottom right, hsl(var(--hue-4), 50%, 40% ), hsl(var(--hue-4), 50%, 60%));
@@ -44,6 +38,39 @@ background-color: rgba(255, 255, 255, 0.5);
 .card__header--blue{
   background-image: linear-gradient(to bottom right, hsl(var(--hue-1), 50%, 40% ), hsl(var(--hue-1), 50%, 70%));
 }
+.card__body{
+  height: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-sizing: content-box;
+  height:80rem;
+  
+}
+.card__body--red{
+  
+  background-color: var(--white);
+  opacity: 1; 
+  margin-bottom: 5rem;
+  height
+  
+  
+}
+.card__body--green{
+  
+  background-color: var(--white);
+  opacity:1; 
+  margin-bottom: 1rem;
+  
+}
+.card__body--blue{
+  
+    background-color: var(--white);
+    opacity: 1; 
+    margin-bottom: 1rem;
+   
+}
+/* Card red */
+
 hr.solid--red {
   border-top: 3px solid;
   color: hsl(var(--hue-3), 50%, 40%); 
@@ -57,15 +84,27 @@ hr.solid--blue {
   color: hsl(var(--hue-1), 70%, 50%);
 }
 .card__button--red {
-  background-color: red hsl(333,)
+ background-color: hsl(var(--hue-3),50%, 50%);
+
   
 }
 
 .card__button--green {
- background-color: green hsl(153,);
+ background-color: hsl(var(--hue-4),50%,40%)
   
 }
 .card__button--blue {
-  background-color: blue hsl(207);
+  background-color:  hsl(var(--hue-1), 50%, 40%);
   
+}
+.card__icon--red {
+  background-color: hsl(var(--hue-3), 50%, 40%) ;
+  
+}
+.card__icon--green{
+  background-color: hsl(var(--hue-4),50%,40%);
+  
+}
+.card__icon--blue{
+  background-color: hsl(var(--hue-1), 50%, 40%);
 }
