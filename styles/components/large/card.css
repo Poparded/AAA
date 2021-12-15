@@ -51,7 +51,7 @@
   background-color: var(--white);
   opacity: 1; 
   margin-bottom: 5rem;
-  height
+  height: 22rem;
   
   
 }
@@ -60,13 +60,14 @@
   background-color: var(--white);
   opacity:1; 
   margin-bottom: 1rem;
-  
+  height: 22rem;
 }
 .card__body--blue{
   
     background-color: var(--white);
     opacity: 1; 
     margin-bottom: 1rem;
+    height :;
    
 }
 /* Card red */
