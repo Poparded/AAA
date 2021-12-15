@@ -14,7 +14,8 @@
  border-top-right-radius: 10px;
  border-top-left-radius: 10px;
  margin-top: 4rem;
- 
+ color: var(--white);
+ padding: 1rem;
 
 }
 
@@ -47,30 +48,15 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 1rem;
-  
+  opacity: 0.7;
+  background-color: var(--white);
+}
+p.card__paragraph{
+  opacity: 1.0;
  
+  margin-bottom: 1rem;
 }
-.card__body--red{
-  
-  background-color: var(--white);
-  
-  height: 30rem ;
-  
-  
-}
-.card__body--green{
-  
-  background-color: var(--white);
-  opacity:1; 
-  height: 30rem;
-}
-.card__body--blue{
-   
-    background-color: var(--white);
-    opacity: 1; 
-    height: 30rem ;
-   
-}
+
 /* Card red */
 
 hr.solid--red {
@@ -99,6 +85,12 @@ hr.solid--blue {
 .card__button--blue {
   background-color:  hsl(var(--hue-1), 50%, 40%);
   
+}
+
+.card__icon {
+  
+  border-radius: 50%;
+  padding: .4rem;
 }
 .card__icon--red {
   background-color: hsl(var(--hue-3), 50%, 40%) ;
