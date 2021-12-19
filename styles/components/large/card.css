@@ -10,7 +10,7 @@
 
 .card__header {
 
- 
+ position: relative;
  border-top-right-radius: 10px;
  border-top-left-radius: 10px;
  margin-top: 4rem;
@@ -18,8 +18,21 @@
  padding: 1rem;
 
 }
-
-
+.card__icon--red{
+  position: absolute;
+  right: 1rem;
+  top: 46.5rem;
+}
+.card__icon--green{
+  position: absolute;
+  right: 1rem;
+  top: 81rem;
+}
+.card__icon--blue{
+  position: absolute;
+  right: 1rem;
+  top: 115rem;
+}
 .card{
  
   
@@ -47,9 +60,10 @@
 .card__body{
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  padding: 1rem;
+  padding: 2rem;
   opacity: 0.7;
   background-color: var(--white);
+  height: 23rem;
 }
 p.card__paragraph{
   opacity: 1.0;
@@ -60,27 +74,33 @@ p.card__paragraph{
 /* Card red */
 
 hr.solid--red {
+  margin-top: 3rem;
   border-top: 3px solid;
   color: hsl(var(--hue-3), 50%, 40%); 
 }
 hr.solid--green {
+  margin-top: 3rem;
   border-top: 3px solid;
   color: hsl(var(--hue-4), 50%, 60%);
 }
 hr.solid--blue {
+  margin-top: 3rem;
   border-top: 3px solid;
   color: hsl(var(--hue-1), 70%, 50%);
 }
+.card__button{
+  padding: 1rem;
+  border-radius: 10%;
+  margin-left: 80%;
+
+}
 .card__button--red {
  background-color: hsl(var(--hue-3),50%, 50%);
- 
-
-  
 }
 
 .card__button--green {
  background-color: hsl(var(--hue-4),50%,40%)
-  
+ 
 }
 .card__button--blue {
   background-color:  hsl(var(--hue-1), 50%, 40%);
