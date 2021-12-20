@@ -1,0 +1,21 @@
+.photo {
+  align-self: center;
+}
+.photo__img {
+}
+/* Ger rutan brevid tjejen färg och padding */
+.photo__color--blue {
+  background-color: hsl(var(--hue-1), 50%, 50%);
+  padding: 2rem;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+/* Gör citatet ljusblått */
+.photo__caption--lightblue {
+  background-color: hsl(var(--hue-1), 50%, 70%);
+}
+
+.photo__caption {
+}
+.photo__caption__author {
+}
