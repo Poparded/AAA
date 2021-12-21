@@ -1,21 +1,32 @@
 .photo {
-  align-self: center;
+  padding: 1rem;
 }
 .photo__img {
 }
 /* Ger rutan brevid tjejen färg och padding */
 .photo__color--blue {
-  background-color: hsl(var(--hue-1), 50%, 50%);
+  background-color: hsl(var(--hue-1), 80%, 30%);
   padding: 2rem;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
 /* Gör citatet ljusblått */
 .photo__caption--lightblue {
-  background-color: hsl(var(--hue-1), 50%, 70%);
+  background-color: hsl(var(--hue-1), 50%, 75%);
+  font-weight: 1000;
+  height: 15rem;
+  position: relative;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .photo__caption {
+  margin-left: 1rem;
+  /* font-size: 1vh; */
 }
 .photo__caption__author {
+  position: absolute;
+  bottom: 1.8rem;
+  left: 16rem;
+  /* font-size: 1vh; */
 }
