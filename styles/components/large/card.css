@@ -31,12 +31,9 @@
 }
 .card {
   display: grid;
-  grid-template-areas:
-    "c-red"
-    "c-green"
-    "c-blue";
   margin-top: 1rem;
   margin-bottom: 1rem;
+  
 }
 .card--red {
   grid-area: c-red;
@@ -80,7 +77,7 @@
   padding: 2rem;
   opacity: 0.7;
   background-color: var(--white);
-  height: 23rem;
+  
 }
 p.card__paragraph {
   opacity: 1;
