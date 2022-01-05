@@ -11,9 +11,8 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
   grid-template-rows: repeat(5, 5rem);
-  grid-template-columns: repeat(5, 20%); 
+  grid-template-columns: repeat(5, 20%);
 }
-
 
 .card__header {
   border-top-right-radius: 10px;
@@ -23,9 +22,8 @@
   padding: 1rem;
   padding-top: 4rem;
   grid-row: span 3;
- /*  grid-row: span 3; */
- grid-column: span 6;
-
+  /*  grid-row: span 3; */
+  grid-column: span 6;
 }
 
 .card__icon {
@@ -35,9 +33,7 @@
   right: 1rem;
 }
 
-
 .card__header--red {
-  
   /*  position: relative; */
   background-image: linear-gradient(
     to bottom right,
@@ -82,11 +78,11 @@
 
 .card__body {
   border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px; 
+  border-bottom-right-radius: 10px;
   padding: 3rem;
   opacity: 0.7;
   grid-column: span 6;
-  grid-row: span 5; 
+  grid-row: span 5;
   background-color: var(--white);
 }
 
@@ -98,7 +94,7 @@ p.card__paragraph {
 /* Card red */
 
 hr.solid--red {
-  margin-top: 1rem; 
+  margin-top: 1rem;
   border-top: 3px solid;
   color: hsl(var(--hue-3), 50%, 40%);
 }
@@ -135,41 +131,42 @@ hr.solid--blue {
 .card__button--blue {
   background-color: hsl(var(--hue-1), 50%, 30%);
 }
+.card,
+.card--danger {
+}
+
 @media only screen and (min-width: 768px) {
-  .card{
+  .card {
     display: grid;
     grid-template-rows: repeat(5, 5rem);
-    grid-template-columns: repeat(5, 20%); 
+    grid-template-columns: repeat(5, 20%);
     overflow: hidden;
-    
-
-
   }
-  
-  .card__header--red, .card__header--blue, .card__body--red, .card__body--blue{
-    grid-column:  2 / 7;
-    
+
+  .card__header--red,
+  .card__header--blue,
+  .card__body--red,
+  .card__body--blue {
+    grid-column: 2 / 7;
   }
- 
-  .card__header--green, .card__body--green{
+
+  .card__header--green,
+  .card__body--green {
     grid-column: 1 / 5;
   }
-  .card__icon--green, .card__button--green{
+  .card__icon--green,
+  .card__button--green {
     right: 21.5%;
-    
   }
 }
-@media only screen and (min-width:1024){
-  
- .container, .container--bg-sea-spray{
-  display: grid;
-  grid-template-rows: repeat(4, 5rem); 
-  grid-template-columns: repeat(4, 20%);
-  
- }
- 
- 
-  .card__button--red{
-    
+@media only screen and (min-width: 1024) {
+  .container,
+  .container--bg-sea-spray {
+    display: grid;
+    grid-template-rows: repeat(4, 5rem);
+    grid-template-columns: repeat(4, 20%);
+  }
+
+  .card__button--red {
   }
 }
