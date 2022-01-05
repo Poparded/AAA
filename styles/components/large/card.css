@@ -11,7 +11,8 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
   grid-template-rows: repeat(5, 5rem);
-  grid-template-columns: repeat(5, 20%);
+  grid-template-columns: repeat(5, 20%); 
+ 
 }
 
 .card__header {
@@ -22,8 +23,8 @@
   padding: 1rem;
   padding-top: 4rem;
   grid-row: span 3;
-  /*  grid-row: span 3; */
-  grid-column: span 6;
+  
+  grid-column: span 6; 
 }
 
 .card__icon {
@@ -82,7 +83,7 @@
   padding: 3rem;
   opacity: 0.7;
   grid-column: span 6;
-  grid-row: span 5;
+  grid-row: span 5; 
   background-color: var(--white);
 }
 
@@ -135,12 +136,16 @@ hr.solid--blue {
 .card--danger {
 }
 
-@media screen and (min-width: 768px) {
+ @media screen and (min-width: 768px) {
   .card {
-    display: grid;
+    
+    grid-column: 2/7; 
 
-    overflow: hidden;
+   overflow: hidden; 
   }
+   .card--green{
+    grid-column: -6/-2;
+  } 
 
   .card__header--red,
   .card__header--blue,
@@ -152,25 +157,24 @@ hr.solid--blue {
   .card__header--green,
   .card__body--green {
     grid-column: 1 / 5;
-  }
-  .card__icon--green,
+  } 
+   .card__icon--green,
   .card__button--green {
     right: 21.5%;
-  }
-}
+  } 
+} 
+
 @media screen and (min-width: 1024px) {
-  .container--bg-sea-spray {
+  .container--skew-left > div{
     display: grid;
-    grid-template-rows: repeat(5, 13rem);
-    grid-template-columns: repeat(4, 24%);
-    grid-template-areas:
-      "skills skills skills skills"
+    grid-template-rows: repeat(2, 40rem);
+    grid-template-columns: repeat(4, 23%);
+     grid-template-areas:
+     
       "glass glass card--red card--red "
-      "glass glass card--red card--red "
-      "card--green card--green card--blue card--blue "
-      "card--green card--green card--blue card--blue";
+      "card--green card--green card--blue card--blue";  
   }
-  .card_container {
+  /* .card_container {
     display: grid; /*
     grid-template-rows: repeat(9, 13rem);
     grid-template-columns: repeat(4, 25%);
@@ -182,26 +186,65 @@ hr.solid--blue {
       "card--green card--green card--blue card--blue "
       "card--green card--green card--blue card--blue "
       "card--green card--green card--blue card--blue  ";} */
-  }
- .glass {
-    width: auto;
   } 
-  /*  :nth-child(2){
-    grid-area: glass;
-    /* grid-row: 2/6;
-        grid-column:1/3 ; 
+ 
+ :nth-child(1){
+  /* grid-row: 1/2;
+  grid-column:1/3 ;   */
+  grid-area: glass;
 }
-.card--red {
-  grid-area: card--red;
-} */
+.card--red{
+ /*  grid-row: 1/2 ;
+  grid-column:3/5 ;
+ */
+ grid-area: card--red;
+}
 
-    .card--blue {
-      grid-area: card--blue;
-    }
-    .card--green {
-      grid-area: card--green;
-    }*/
-:nth-child(1) {
+/* :nth-child(3){
+  grid-row: 2/3;
+  grid-column: 3/5; 
+/*   grid-area: card_header--red; 
+}
+:nth-child(4/5){
+  grid-row: 3/5;
+  grid-column: 3/5; 
+  grid-area: card_body--red;
+}
+.card__header--blue{
+  grid-row: 6/7;
+  grid-column: 1/3;
+}
+.card__body--blue{
+  grid-row: 7/10;
+  grid-column: 1/3;
+}
+.card__header--green{
+  grid-row: 6/7;
+  grid-column: 3/5;
+}
+.card__body--green{
+  grid-row: 7/10;
+  grid-column: 3/5;
+
+}
+ */
+
+ /* .card--red {
+  grid-row: 2/6;
+  grid-column: 3/5;
+}   */
+
+/* .card--blue {
+  grid-row: 6/10;
+  grid-column: 1/3;
+}
+.card--green { 
+  grid-row: 6/10;
+  grid-column: 3/5;
+} */
+     
+.container__heading {
   /* grid-area: skills; */
-  grid-area: skills;
+  grid-row:1/2 ;
+  
 }
