@@ -186,7 +186,7 @@ hr.solid--blue {
       "card--green card--green card--blue card--blue "
       "card--green card--green card--blue card--blue "
       "card--green card--green card--blue card--blue  ";} */
-  } 
+  
  
  :nth-child(1){
   /* grid-row: 1/2;
@@ -247,4 +247,5 @@ hr.solid--blue {
   /* grid-area: skills; */
   grid-row:1/2 ;
   
+}
 }
