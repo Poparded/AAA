@@ -7,9 +7,10 @@
   padding-top: 50rem;
   position: relative;
 }
-.photo img {
+.photo__img {
   position: absolute;
   bottom: 46rem;
+  right: 2rem;
 }
 
 /* Ger rutan brevid tjejen färg och padding */
@@ -36,15 +37,13 @@
   /* font-size: 1vh; */
 }
 .photo__caption__author {
-  /*   font-size: 5vw;
- */
   font-size: 2rem;
   bottom: 1.8rem;
-  left: 40%;
+  left: 13rem;
   position: absolute;
-  /* font-size: 1vh; */
 }
-media only screen and (min-width: 768px) {
+
+@media only screen and (min-width: 768px) {
 }
 @media only screen and (min-width: 1024) {
 }
