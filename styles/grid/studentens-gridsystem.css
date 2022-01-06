@@ -1,7 +1,8 @@
-.card {
+.cards{
   display: grid;
   grid-template-rows: repeat(1fr, 1fr);
-  grid-template-columns: repeat(1fr, 1fr);
+  grid-template-columns: repeat(2,1fr);
+
 }
 
 .card__header,
@@ -15,8 +16,8 @@
 } */
 
 @media screen and (min-width: 768px) {
-  .card {
-    grid-template-columns: repeat(5, 20%);
+  .div {
+    grid-template-columns: repeat(6, 16%);
   }
 
   .card__header--red,
@@ -28,21 +29,44 @@
 
   .card__header--green,
   .card__body--green {
-    grid-column: 1 / 5;
+    grid-column: 1 / 6;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .card, .container--skew-left>div {
-    grid-template-rows: repeat(6, 15rem);
-    grid-template-columns: repeat(2, 48%) ;
+  
+  .card,
+  .container--skew-left>div {
+    display: grid;
+    grid-template-rows: repeat(6, 13);
+    grid-template-columns: repeat(2,48%) ;
+
+  }
+  .card__header{
+   2
   }
 
-  .card__header, .card__body{
-    grid-column: 2/3;
+ .container--skew-left:nth-child(1){
+    grid-row: 1 /2;
+    grid-column: 1 / 2;
   }
-  .card__header--green, .card__body--blue
- */
+  .card__header--red{
+    grid-template-columns: subgrid;
+    grid-row: 1/2;
+    grid-column: 1/4;
+   
+  }
+ .card__body--red{
+  grid-template-columns: subgrid;
+  grid-row: 2/4;
+  grid-column: 1/4;
+
+} 
+
+.card__body--green{
+  grid-template-columns: subgrid;
+  grid-column: 1/2
+}
 
 /*  .card--blue {
    
