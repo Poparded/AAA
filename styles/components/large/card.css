@@ -13,11 +13,12 @@
 }
 
 .card__header {
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
   color: var(--white);
   padding: 1rem;
   padding-top: 4rem;
+  margin-top: 4rem ;
   
 }
 
@@ -67,8 +68,8 @@
 }
 
 .card__body {
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
   padding: 3rem;
   opacity: 0.7;
   background-color: var(--white);
