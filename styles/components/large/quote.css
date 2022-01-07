@@ -1,0 +1,49 @@
+.container__photo {
+  height: 70rem;
+}
+.photo {
+  height: 100rem;
+  padding: 1rem;
+  padding-top: 50rem;
+  position: relative;
+}
+.photo__img {
+  position: absolute;
+  bottom: 46rem;
+  right: 2rem;
+}
+
+/* Ger rutan brevid tjejen färg och padding */
+.photo__color--blue {
+  background-color: hsl(var(--hue-1), 80%, 30%);
+  padding: 2rem;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+/* Gör citatet ljusblått */
+.photo__caption--lightblue {
+  background-color: hsl(var(--hue-1), 50%, 75%);
+  font-weight: 500;
+  font-size: 1.5rem;
+  height: 25rem;
+  position: relative;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.photo__caption {
+  margin-left: 1rem;
+  /* font-size: 1vh; */
+}
+.photo__caption__author {
+  font-size: 2rem;
+  bottom: 1.8rem;
+  left: 13rem;
+  position: absolute;
+}
+
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 1024) {
+}
