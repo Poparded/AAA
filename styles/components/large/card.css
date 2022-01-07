@@ -1,0 +1,135 @@
+
+    
+    
+    
+  
+  
+  .card__header {
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    color: var(--white);
+    padding: 1rem;
+    padding-top: 3rem;
+    position: relative;
+    margin-top: 1rem;
+    
+  }
+  
+  .card__icon {
+    border-radius: 50%;
+    padding: 0.4rem;
+    right: 1rem;
+  }
+  
+  .card__header--red {
+    background-image: linear-gradient(
+      to bottom right,
+      hsl(var(--hue-3), 50%, 30%),
+      hsl(var(--hue-3), 50%, 65%)
+    );
+  }
+  .card__icon--red {
+    top: 49.5rem;
+    position: absolute;
+    background-color: hsl(var(--hue-3), 50%, 40%);
+  }
+  /* Card green*/
+  .card__header--green {
+    
+    background-image: linear-gradient(
+      to bottom right,
+      hsl(var(--hue-4), 50%, 30%),
+      hsl(var(--hue-4), 50%, 60%)
+    );
+  }
+  .card__icon--green {
+    top: 60%;
+    
+    position: absolute;
+    background-color: hsl(var(--hue-4), 50%, 40%);
+  }
+  /* Card blue */
+  .card__header--blue {
+    
+    text-transform: capitalize;
+    background-image: linear-gradient(
+      to bottom right,
+      hsl(var(--hue-1), 50%, 30%),
+      hsl(var(--hue-1), 50%, 70%)
+    );
+  }
+  .card__icon--blue {
+    position: absolute;
+    background-color: hsl(var(--hue-1), 50%, 40%);
+  }
+  
+  .card__body {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    
+    padding: 3rem;
+    opacity: 0.7;
+    background-color: var(--white);
+  }
+  
+  p.card__paragraph {
+    opacity: 1;
+    margin-bottom: 1rem;
+  }
+  
+  /* Card red */
+  
+  hr.solid--red {
+    margin-top: 1rem;
+    border-top: 3px solid;
+    color: hsl(var(--hue-3), 50%, 40%);
+  }
+  hr.solid--green {
+    margin-top: 1rem;
+    border-top: 3px solid;
+    color: hsl(var(--hue-4), 50%, 60%);
+  }
+  hr.solid--blue {
+    margin-top: 1rem;
+    border-top: 3px solid;
+    color: hsl(var(--hue-1), 70%, 50%);
+  }
+  .card__button {
+    border-radius: 10%;
+    position: absolute;
+    right: 1rem;
+    bottom: 0.7rem;
+    height: 30px;
+    width: 10.5rem;
+    text-align: center;
+    color: white;
+  }
+  .card__button--red {
+    background-color: hsl(var(--hue-3), 50%, 30%);
+  }
+  
+  .card__button--green {
+    background-color: hsl(var(--hue-4), 50%, 30%);
+  }
+  .card__button--blue {
+    background-color: hsl(var(--hue-1), 50%, 30%);
+  }
+  
+  
+  @media screen and (min-width: 768px) {
+    .card__header {
+        padding-top: 6rem;
+    }
+
+    .card__icon--green,
+    .card__button--green {
+      right: 21.5%;
+    }
+    .card__icon--red,.card__icon--blue,
+    .card__button--red, .card__button--blue {
+      right: 5.5%;
+    }
+  }
+
+  
+  

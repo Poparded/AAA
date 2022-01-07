@@ -1,0 +1,86 @@
+.card__container{
+    display: grid;
+        grid-template-rows: repeat(9, 10rem);
+        grid-template-columns: repeat(1, 100%);
+        grid-template-areas: 
+        "red_h"
+        "red_b"
+        "red_b"
+        "green_h"
+        "green_b"
+        "green_b"
+        "blue_h"
+        "blue_b"
+        "blue_b"
+        ;
+}
+.card__header--red{
+    grid-area: red_h;
+}
+.card__body--red{
+    grid-area: red_b;
+
+}
+.card__header--green{
+    grid-area: green_h;
+}
+.card__body--green{
+    grid-area: green_b;
+    
+}
+.card__header--blue{
+    grid-area: blue_h;
+}
+.card__body--blue{
+    grid-area: blue_b;
+
+}
+@media screen and (min-width:768px) {
+    .card__container{
+        
+        grid-template-rows: repeat(9, 13rem);
+        grid-template-columns: repeat(5, 20%);
+        grid-template-areas: 
+        ". red_h red_h red_h red_h"
+        ". red_b red_b red_b red_b"
+        ". red_b red_b red_b red_b"
+        "green_h green_h green_h green_h ."
+        "green_b green_b green_b green_b ."
+        "green_b green_b green_b green_b ."
+        ". blue_h blue_h blue_h blue_h"
+        ".blue_b blue_b blue_b blue_b"
+        ".blue_b blue_b blue_b blue_b"
+        ;
+    }  
+}
+
+@media screen and (min-width: 1024px) {
+  
+    .container__glass__card,
+    .card__container{
+        display:contents;
+        
+    } 
+     .container__glass__card{
+        display: grid;
+        grid-column-gap: 1rem;
+        grid-template-rows: repeat(6, 15rem);
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas: 
+        "glass red_h"
+        "glass red_b"
+        "glass red_b"
+        "green_h blue_h"
+        "green_b blue_b"
+        "green_b blue_b"
+        ;
+        
+    }  
+  
+    .glass{
+        grid-area: glass;
+        margin-top: 1rem;
+    }
+    
+    
+}
