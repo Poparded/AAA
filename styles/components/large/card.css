@@ -4,8 +4,8 @@
   color: var(--white);
   padding: 1rem;
   padding-top: 3rem;
-  position: relative;
-  margin-top: 1rem;
+  
+  margin-top: 4rem;
   text-transform: capitalize;
   background-image: linear-gradient(
     to bottom right,
@@ -13,14 +13,21 @@
     hsl(var(--hue-1), 50%, 70%)
   );
 }
-
+.card{
+  position: relative;
+}
 .card__icon {
   border-radius: 50%;
   padding: 0.4rem;
   right: 1rem;
+  top: 18%;
   position: absolute;
   background-color: hsl(var(--hue-1), 50%, 40%);
+  opacity: 1.0;
   
+}
+.card__icon--blue{
+  top: 13%;
 }
 
 /*  .card__header--danger{
@@ -90,45 +97,56 @@ p.card__paragraph {
   border-radius: 10%;
   position: absolute;
   right: 1rem;
-  bottom: 0.7rem;
   height: 30px;
   width: 10.5rem;
   text-align: center;
   color: white;
-}
-/*  .card__button--red {
-  background-color: hsl(var(--hue-3), 50%, 30%);
-}
-
-.card__button--green {
-  background-color: hsl(var(--hue-4), 50%, 30%);
+  background-color: hsl(var(--hue-1), 50%, 40%);
+  bottom: 20%;
 }
 .card__button--blue {
-  background-color: hsl(var(--hue-1), 50%, 30%);
+  bottom: 27%;
 }
- */
+/*  .card__button--danger {
+ top: 44.5%;
+}
+
+.card__button--success{
+  top: 69.5%;
+}
+.card__button--blue {
+  bottom: 15;
+} */
+ 
 
 @media screen and (min-width: 768px) {
-  .card__header {
-      padding-top: 6rem;
+  .card__icon{
+    top: 28%;
   }
 
-  .card__icon--green,
-  .card__button--green {
-    right: 21.5%;
+  .card__icon--blue{
+    top:21%;
   }
-  .card__icon--red,.card__icon--blue,
-  .card__button--red, .card__button--blue {
-    right: 5.5%;
+  .card__button{
+    bottom: 6%;
   }
+  .card__button--blue{
+    bottom: 13%;
+  } */
 }
 
 @media screen and (min-width: 1024px) {
   .card__header--blue{
-    height: 12.5rem;
+    height: 9.5rem;
   }
   .card__header{
     margin-top: 0;
+  }
+  .card__icon{
+    top: 18%;
+  }
+  .card__button{
+    bottom: 2%;
   }
 }
   
