@@ -34,7 +34,9 @@
 }
 
 @media screen and (min-width: 1024px) {
-  
+  .container__gc, .card{
+    display: contents;
+  }
   
   .container__gc {
     
@@ -45,7 +47,7 @@
   }
  
   
-  .glass{
+  /* .glass{
     margin-top: 5rem;
     margin-right: 1rem;
     margin-bottom: 0.7rem;
@@ -62,7 +64,7 @@
     grid-row: 4/5;
     grid-column: 1/2;
  
-  }
+  } */
 
  /*  .card__header--red{
     
@@ -138,4 +140,4 @@
 .card--green { 
   grid-row: 6/10;
   grid-column: 3/5;} 
-}*/ ;
+}<*/ 
