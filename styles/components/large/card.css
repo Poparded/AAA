@@ -19,15 +19,16 @@
 .card__icon {
   border-radius: 50%;
   padding: 0.4rem;
-  right: 1rem;
-  top: 18%;
+  right: 0rem;
+  top: 0%;
+  transform: translate(-10%, 160%);
   position: absolute;
   background-color: hsl(var(--hue-1), 50%, 40%);
   opacity: 1.0;
   
 }
 .card__icon--blue{
-  top: 13%;
+  transform: translate(-10%, 125%);
 }
 
 /*  .card__header--danger{
@@ -96,16 +97,18 @@ p.card__paragraph {
 .card__button {
   border-radius: 10%;
   position: absolute;
-  right: 1rem;
+  right: 0;
   height: 30px;
   width: 10.5rem;
   text-align: center;
   color: white;
   background-color: hsl(var(--hue-1), 50%, 40%);
-  bottom: 20%;
+  transform: translate(-10%, -140%);
 }
 .card__button--blue {
-  bottom: 27%;
+  bottom: 0;
+  right: 0;
+  transform: translate(-10%, -180%);
 }
 /*  .card__button--danger {
  top: 44.5%;
@@ -113,41 +116,47 @@ p.card__paragraph {
 
 .card__button--success{
   top: 69.5%;
-}
+}*/
 .card__button--blue {
-  bottom: 15;
-} */
+  transform: translate(-10%,-355%);
+} 
  
 
 @media screen and (min-width: 768px) {
-  .card__icon{
-    top: 28%;
+   .card__icon{
+    transform: translate(-10%, 180%);
   }
 
   .card__icon--blue{
-    top:21%;
+    transform: translate(-10%, 140%);
   }
   .card__button{
-    bottom: 6%;
+    transform: translate(-10%, -150%);
   }
-  .card__button--blue{
-    bottom: 13%;
-  } */
+  .card__button--blue {
+  transform: translate(-10%, -190%);
+}
 }
 
 @media screen and (min-width: 1024px) {
-  .card__header--blue{
-    height: 9.5rem;
+   .card__header--blue{
+    height: 9.4rem;
   }
   .card__header{
     margin-top: 0;
   }
   .card__icon{
+    transform: translate(-10%, 120%);
+  }
+  .card__button--blue {
+  
+    transform: translate(-10%, -40%);/*
+  .card__icon{
     top: 18%;
   }
   .card__button{
     bottom: 2%;
-  }
+  } */
 }
   
   
