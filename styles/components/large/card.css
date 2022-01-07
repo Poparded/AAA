@@ -17,6 +17,7 @@
   position: relative;
 }
 .card__icon {
+  
   border-radius: 50%;
   padding: 0.4rem;
   right: 0rem;
@@ -75,6 +76,7 @@
 p.card__paragraph {
   opacity: 1;
   margin-bottom: 1rem;
+
 }
 
 /* Card red */
@@ -119,9 +121,29 @@ p.card__paragraph {
 }*/
 .card__button--blue {
   transform: translate(-10%,-355%);
-} 
  
+} 
 
+.card--danger header{
+ background-image: linear-gradient(
+  to bottom right,
+  hsl(var(--hue-3), 50%, 30%),
+  hsl(var(--hue-3), 50%, 65%));
+  
+}
+.card--danger img{
+  
+  color:hsl(var(--hue-3), 50%, 30%) ;
+  background-color: hsl(var(--hue-3), 50%, 30%);
+  
+  
+
+}
+.card--danger a{
+  
+  background-color: hsl(var(--hue-3), 50%, 40%);
+  
+}
 @media screen and (min-width: 768px) {
    .card__icon{
     transform: translate(-10%, 180%);
@@ -158,5 +180,5 @@ p.card__paragraph {
     bottom: 2%;
   } */
 }
-  
+}
   
