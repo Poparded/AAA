@@ -8,6 +8,8 @@
   position: relative;
 }
 .photo__img {
+  max-width: 100%;
+  height: auto;
   position: absolute;
   bottom: 46rem;
   right: 2rem;
