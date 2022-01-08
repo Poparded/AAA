@@ -1,10 +1,10 @@
+/* card  */
 .card__header {
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
   color: var(--white);
   padding: 1rem;
   padding-top: 3rem;
-  
   margin-top: 4rem;
   text-transform: capitalize;
   background-image: linear-gradient(
@@ -19,21 +19,21 @@
 .card__icon {
   
   border-radius: 50%;
-  padding: 0.4rem;
+  padding: 0.6rem; 
   right: 0rem;
   top: 0%;
-  transform: translate(-10%, 160%);
+  transform: translate(-10%, 185%);
   position: absolute;
-  background-color: hsl(var(--hue-1), 50%, 60%);
+  background-color: hsl(var(--hue-1), 50%, 60%); 
   opacity: 1.0;
   z-index: 2;
- 
+  
 }
 .hr{
   background-color: hsl(var(--hue-1), 50%, 60%);
 }
 .card__icon--blue{
-  transform: translate(-10%, 125%);
+  transform: translate(-10%, 140%);
 }
 
 
@@ -45,7 +45,7 @@
   padding: 3rem;
   position: relative;
   background-color: var(--white); 
-  opacity: 0.8;
+  opacity: 0.8; 
   z-index: 1;
   
 }
@@ -69,21 +69,13 @@ p.card__paragraph {
   transform: translate(-10%, -120%);
   z-index: 2;
 }
-.card__button--blue {
-  bottom: 0;
-  right: 0;
-  transform: translate(-10%, -70%);
-}
 
 
 .hr{
   position: absolute;
 
 }
-.card__button--blue {
-  transform: translate(-10%,-300%);
- 
-} 
+
 
 .card--danger header{
  background-image: linear-gradient(
@@ -93,11 +85,12 @@ p.card__paragraph {
   
 }
 .card--danger img{
-  overflow: hidden;
+  
   color:hsl(var(--hue-3), 40%, 30%) ;
   background-color: hsl(var(--hue-3), 40%, 40%);
   border-radius: 50%;
-  padding: 0.4rem;
+  padding: 0.5rem;
+  overflow: auto;
 }
 .card--danger a {
   
@@ -117,11 +110,12 @@ p.card__paragraph {
    
  }
  .card--success img{
-   overflow: hidden;
+   
    color:hsl(var(--hue-4), 50%, 60%);
    background-color: hsl(var(--hue-4), 50%, 60%);
    border-radius: 50%;
    padding: 0.4rem;
+   overflow: auto;
  }
  .card--success a {
    
@@ -133,11 +127,11 @@ p.card__paragraph {
  }
 @media screen and (min-width: 768px) {
    .card__icon{
-    transform: translate(-10%, 180%);
+    transform: translate(-10%, 210%);
   }
 
   .card__icon--blue{
-    transform: translate(-10%, 140%);
+    transform: translate(-10%, 10%);
   }
   .card__button{
     transform: translate(-10%, -130%);
@@ -159,10 +153,6 @@ p.card__paragraph {
   .card__icon{
     transform: translate(-10%, 120%);
   }
-  .card__button--blue {
   
-    transform: translate(-10%, -30%);
-  
-}
 }
   
