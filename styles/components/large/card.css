@@ -25,8 +25,12 @@
   transform: translate(-10%, 160%);
   position: absolute;
   background-color: hsl(var(--hue-1), 50%, 40%);
-  opacity: 1.0;
-  
+  opacity: 1.0;'
+  fill-opacity: 1;
+ 
+}
+.hr{
+  background-color: hsl(var(--hue-1), 50%, 40%);
 }
 .card__icon--blue{
   transform: translate(-10%, 125%);
@@ -105,12 +109,12 @@ p.card__paragraph {
   text-align: center;
   color: white;
   background-color: hsl(var(--hue-1), 50%, 40%);
-  transform: translate(-10%, -140%);
+  transform: translate(-10%, -120%);
 }
 .card__button--blue {
   bottom: 0;
   right: 0;
-  transform: translate(-10%, -180%);
+  transform: translate(-10%, -70%);
 }
 /*  .card__button--danger {
  top: 44.5%;
@@ -119,8 +123,12 @@ p.card__paragraph {
 .card__button--success{
   top: 69.5%;
 }*/
+.hr{
+  position: absolute;
+
+}
 .card__button--blue {
-  transform: translate(-10%,-355%);
+  transform: translate(-10%,-300%);
  
 } 
 
@@ -132,18 +140,44 @@ p.card__paragraph {
   
 }
 .card--danger img{
-  
+  overflow: hidden;
   color:hsl(var(--hue-3), 50%, 30%) ;
   background-color: hsl(var(--hue-3), 50%, 30%);
-  
-  
-
+  border-radius: 50%;
+  padding: 0.4rem;
 }
-.card--danger a{
+.card--danger a {
   
   background-color: hsl(var(--hue-3), 50%, 40%);
   
 }
+.card--danger hr{
+  
+  color: hsl(var(--hue-3), 50%, 40%);
+}
+.card--success header{
+  background-image: linear-gradient(
+    to bottom right,
+    hsl(var(--hue-4), 50%, 30%),
+    hsl(var(--hue-4), 50%, 60%)
+  );
+   
+ }
+ .card--success img{
+   overflow: hidden;
+   color:hsl(var(--hue-4), 50%, 60%);
+   background-color: hsl(var(--hue-4), 50%, 60%);
+   border-radius: 50%;
+   padding: 0.4rem;
+ }
+ .card--success a {
+   
+   background-color: hsl(var(--hue-4), 50%, 60%);
+   
+ }
+ .card--success hr{
+  color: hsl(var(--hue-4), 50%, 60%);
+ }
 @media screen and (min-width: 768px) {
    .card__icon{
     transform: translate(-10%, 180%);
@@ -153,12 +187,11 @@ p.card__paragraph {
     transform: translate(-10%, 140%);
   }
   .card__button{
-    transform: translate(-10%, -150%);
+    transform: translate(-10%, -130%);
   }
-  .card__button--blue {
-  transform: translate(-10%, -190%);
+  
 }
-}
+
 
 @media screen and (min-width: 1024px) {
    .card__header--blue{
@@ -172,7 +205,7 @@ p.card__paragraph {
   }
   .card__button--blue {
   
-    transform: translate(-10%, -40%);/*
+    transform: translate(-10%, 20%);/*
   .card__icon{
     top: 18%;
   }
