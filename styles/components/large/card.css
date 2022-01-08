@@ -1,6 +1,6 @@
 .card__header {
-  border-top-right-radius: 12px;
-  border-top-left-radius: 12px;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
   color: var(--white);
   padding: 1rem;
   padding-top: 3rem;
@@ -24,82 +24,39 @@
   top: 0%;
   transform: translate(-10%, 160%);
   position: absolute;
-  background-color: hsl(var(--hue-1), 50%, 40%);
-  opacity: 1.0;'
-  fill-opacity: 1;
+  background-color: hsl(var(--hue-1), 50%, 60%);
+  opacity: 1.0;
+  z-index: 2;
  
 }
 .hr{
-  background-color: hsl(var(--hue-1), 50%, 40%);
+  background-color: hsl(var(--hue-1), 50%, 60%);
 }
 .card__icon--blue{
   transform: translate(-10%, 125%);
 }
 
-/*  .card__header--danger{
-  background-image: linear-gradient(
-    to bottom right,
-    hsl(var(--hue-3), 50%, 30%),
-    hsl(var(--hue-3), 50%, 65%)
-  );
-} */
-/* .card__icon--red {
-  top: 49.5rem;
-  position: absolute;
-  background-color: hsl(var(--hue-3), 50%, 40%);
-} */
-
-/* Card green*/
-/*  .card__header--green {
-  
-  background-image: linear-gradient(
-    to bottom right,
-    hsl(var(--hue-4), 50%, 30%),
-    hsl(var(--hue-4), 50%, 60%)
-  );
-} */
-/* .card__icon--green {
-  top: 60%;
-  
-  position: absolute;
-  background-color: hsl(var(--hue-4), 50%, 40%);
-}
- */
 
 
 
 .card__body {
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
   padding: 3rem;
-  opacity: 0.7;
-  background-color: var(--white);
+  position: relative;
+  background-color: var(--white); 
+  opacity: 0.8;
+  z-index: 1;
+  
 }
 
 p.card__paragraph {
-  opacity: 1;
+ 
   margin-bottom: 1rem;
 
 }
 
-/* Card red */
 
-/*   hr.solid--red {
-  margin-top: 1rem;
-  border-top: 3px solid;
-  color: hsl(var(--hue-3), 50%, 40%);
-} */
-/* hr.solid--green {
-  margin-top: 1rem;
-  border-top: 3px solid;
-  color: hsl(var(--hue-4), 50%, 60%);
-} */
-/* .solid {
-  margin-top: 1rem;
-  border-top: 3px solid;
-  color: hsl(var(--hue-1), 70%, 50%);
-} */
 .card__button {
   border-radius: 10%;
   position: absolute;
@@ -108,21 +65,17 @@ p.card__paragraph {
   width: 10.5rem;
   text-align: center;
   color: white;
-  background-color: hsl(var(--hue-1), 50%, 40%);
+  background-color: hsl(var(--hue-1), 50%, 60%);
   transform: translate(-10%, -120%);
+  z-index: 2;
 }
 .card__button--blue {
   bottom: 0;
   right: 0;
   transform: translate(-10%, -70%);
 }
-/*  .card__button--danger {
- top: 44.5%;
-}
 
-.card__button--success{
-  top: 69.5%;
-}*/
+
 .hr{
   position: absolute;
 
@@ -135,25 +88,25 @@ p.card__paragraph {
 .card--danger header{
  background-image: linear-gradient(
   to bottom right,
-  hsl(var(--hue-3), 50%, 30%),
-  hsl(var(--hue-3), 50%, 65%));
+  hsl(var(--hue-3), 40%, 30%),
+  hsl(var(--hue-3), 40%, 65%));
   
 }
 .card--danger img{
   overflow: hidden;
-  color:hsl(var(--hue-3), 50%, 30%) ;
-  background-color: hsl(var(--hue-3), 50%, 30%);
+  color:hsl(var(--hue-3), 40%, 30%) ;
+  background-color: hsl(var(--hue-3), 40%, 40%);
   border-radius: 50%;
   padding: 0.4rem;
 }
 .card--danger a {
   
-  background-color: hsl(var(--hue-3), 50%, 40%);
+  background-color: hsl(var(--hue-3), 40%, 40%);
   
 }
 .card--danger hr{
   
-  color: hsl(var(--hue-3), 50%, 40%);
+  color: hsl(var(--hue-3), 40%, 40%);
 }
 .card--success header{
   background-image: linear-gradient(
@@ -200,18 +153,16 @@ p.card__paragraph {
   .card__header{
     margin-top: 0;
   }
+  .card__body{
+    margin-bottom: 0;
+  }
   .card__icon{
     transform: translate(-10%, 120%);
   }
   .card__button--blue {
   
-    transform: translate(-10%, 20%);/*
-  .card__icon{
-    top: 18%;
-  }
-  .card__button{
-    bottom: 2%;
-  } */
+    transform: translate(-10%, -30%);
+  
 }
 }
   
