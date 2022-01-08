@@ -1,6 +1,6 @@
 .container__glass__card{
     display: grid;
-    grid-template-rows: /* 35rem 20rem 20rem 20rem */ repeat(4, 40rem);
+    grid-template-rows:  repeat(4, 40rem);
     grid-template-columns: repeat(1, 100%);
     grid-template-areas: 
     "glass"
@@ -22,7 +22,11 @@
 .card--blue{
     grid-area: blue_h;
 }
-
+@media screen and (min-width: 448) {
+    .container__glass__card{
+        grid-template-rows:  repeat(4, 37rem);
+    }
+}
 
 @media screen and (min-width:768px) {
     .container__glass__card{

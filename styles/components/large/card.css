@@ -1,4 +1,8 @@
 /* card  */
+.card{
+  position: relative;
+}
+
 .card__header {
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
@@ -13,9 +17,25 @@
     hsl(var(--hue-1), 50%, 70%)
   );
 }
-.card{
-  position: relative;
-}
+
+.card--danger header{
+  background-image: linear-gradient(
+   to bottom right,
+   hsl(var(--hue-3), 40%, 30%),
+   hsl(var(--hue-3), 40%, 65%));
+   
+ }
+
+ .card--success header{
+  background-image: linear-gradient(
+    to bottom right,
+    hsl(var(--hue-4), 50%, 30%),
+    hsl(var(--hue-4), 50%, 60%)
+  );
+   
+ }
+
+
 .card__icon {
   
   border-radius: 50%;
@@ -29,15 +49,26 @@
   z-index: 2;
   
 }
-.hr{
-  background-color: hsl(var(--hue-1), 50%, 60%);
-}
 .card__icon--blue{
   transform: translate(-10%, 140%);
 }
+.card--danger img{
+  
+  color:hsl(var(--hue-3), 40%, 30%) ;
+  background-color: hsl(var(--hue-3), 40%, 40%);
+  border-radius: 50%;
+  padding: 0.5rem;
+  overflow: auto;
+}
 
-
-
+.card--success img{
+   
+  color:hsl(var(--hue-4), 50%, 60%);
+  background-color: hsl(var(--hue-4), 50%, 60%);
+  border-radius: 50%;
+  padding: 0.4rem;
+  overflow: auto;
+}
 
 .card__body {
   border-bottom-left-radius: 1rem;
@@ -56,9 +87,21 @@ p.card__paragraph {
 
 }
 
+.hr{
+  background-color: hsl(var(--hue-1), 50%, 60%);
+}
+
+.card--danger hr{
+  
+  color: hsl(var(--hue-3), 40%, 40%);
+}
+
+.card--success hr{
+  color: hsl(var(--hue-4), 50%, 60%);
+ }
 
 .card__button {
-  border-radius: 10%;
+  border-radius: 8%;
   position: absolute;
   right: 0;
   height: 30px;
@@ -70,75 +113,31 @@ p.card__paragraph {
   z-index: 2;
 }
 
-
-.hr{
-  position: absolute;
-
-}
-
-
-.card--danger header{
- background-image: linear-gradient(
-  to bottom right,
-  hsl(var(--hue-3), 40%, 30%),
-  hsl(var(--hue-3), 40%, 65%));
-  
-}
-.card--danger img{
-  
-  color:hsl(var(--hue-3), 40%, 30%) ;
-  background-color: hsl(var(--hue-3), 40%, 40%);
-  border-radius: 50%;
-  padding: 0.5rem;
-  overflow: auto;
-}
 .card--danger a {
   
   background-color: hsl(var(--hue-3), 40%, 40%);
   
 }
-.card--danger hr{
-  
-  color: hsl(var(--hue-3), 40%, 40%);
-}
-.card--success header{
-  background-image: linear-gradient(
-    to bottom right,
-    hsl(var(--hue-4), 50%, 30%),
-    hsl(var(--hue-4), 50%, 60%)
-  );
-   
- }
- .card--success img{
-   
-   color:hsl(var(--hue-4), 50%, 60%);
-   background-color: hsl(var(--hue-4), 50%, 60%);
-   border-radius: 50%;
-   padding: 0.4rem;
-   overflow: auto;
- }
+
  .card--success a {
    
    background-color: hsl(var(--hue-4), 50%, 60%);
    
  }
- .card--success hr{
-  color: hsl(var(--hue-4), 50%, 60%);
- }
+
 @media screen and (min-width: 768px) {
    .card__icon{
     transform: translate(-10%, 210%);
   }
 
   .card__icon--blue{
-    transform: translate(-10%, 10%);
+    transform: translate(-10%, 160%);
   }
   .card__button{
     transform: translate(-10%, -130%);
   }
   
 }
-
 
 @media screen and (min-width: 1024px) {
    .card__header--blue{
@@ -151,7 +150,7 @@ p.card__paragraph {
     margin-bottom: 0;
   }
   .card__icon{
-    transform: translate(-10%, 120%);
+    transform: translate(-10%, 150%);
   }
   
 }
