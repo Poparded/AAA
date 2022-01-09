@@ -1,18 +1,18 @@
 .container__photo {
-  height: 70rem;
+  height: 100rem;
 }
 .photo {
   height: 100rem;
   padding: 1rem;
-  padding-top: 50rem;
   position: relative;
+  padding-top: 20rem;
 }
-.photo__img {
+.photo--img {
   max-width: 100%;
   height: auto;
   position: absolute;
-  bottom: 46rem;
-  right: 2rem;
+  bottom: 76rem;
+  right: 10rem;
 }
 
 /* Ger rutan brevid tjejen färg och padding */
@@ -36,16 +36,37 @@
 
 .photo__caption {
   margin-left: 1rem;
-  /* font-size: 1vh; */
 }
 .photo__caption__author {
   font-size: 2rem;
   bottom: 1.8rem;
-  left: 13rem;
   position: absolute;
+  width: 60vw;
 }
 
-@media only screen and (min-width: 768px) {
-}
-@media only screen and (min-width: 1024) {
+/* @media only screen and (min-width: 768px) {
+  .photo_content {
+    width: 10rem;
+  }
+  .container__photo {
+    width: 30vh;
+  }
+  .photo {
+    width: 30vh;
+  }
+} */
+@media only screen and (min-width: 1024px) {
+  .photo_content {
+    width: 40vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .photo {
+    position: relative;
+  }
+  .photo--img {
+    position: absolute;
+    right: 45rem;
+  }
 }
