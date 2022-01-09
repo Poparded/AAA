@@ -1,143 +1,88 @@
-.card{
+.card__container {
   display: grid;
-  grid-template-rows: repeat(1fr, 1fr);
-  grid-template-columns: repeat(2,1fr);
-
+  grid-template-rows: repeat(9, 10rem);
+  grid-template-columns: repeat(1, 100%);
+  grid-template-areas:
+    "red_h"
+    "red_b"
+    "red_b"
+    "green_h"
+    "green_b"
+    "green_b"
+    "blue_h"
+    "blue_b"
+    "blue_b";
 }
-
-.card__header,
-.card__body {
-  grid-column: 1/6;
+.card__header--red {
+  grid-area: red_h;
 }
-
-/* .card--red {
-  grid-column: 1/6;
-  grid-row: 1/4;
-} */
-
+.card__body--red {
+  grid-area: red_b;
+}
+.card__header--green {
+  grid-area: green_h;
+}
+.card__body--green {
+  grid-area: green_b;
+}
+.card__header--blue {
+  grid-area: blue_h;
+}
+.card__body--blue {
+  grid-area: blue_b;
+}
 @media screen and (min-width: 768px) {
-  .card {
-    grid-template-columns: repeat(6, 16%);
-  }
-
-  .card__header--red,
-  .card__header--blue,
-  .card__body--red,
-  .card__body--blue {
-    grid-column: 2 / 7;
-  }
-
-  .card__header--green,
-  .card__body--green {
-    grid-column: 1 / 6;
+  .card__container {
+    grid-template-rows: repeat(9, 13rem);
+    grid-template-columns: repeat(5, 20%);
+    grid-template-areas:
+      ". red_h red_h red_h red_h"
+      ". red_b red_b red_b red_b"
+      ". red_b red_b red_b red_b"
+      "green_h green_h green_h green_h ."
+      "green_b green_b green_b green_b ."
+      "green_b green_b green_b green_b ."
+      ". blue_h blue_h blue_h blue_h"
+      ".blue_b blue_b blue_b blue_b"
+      ".blue_b blue_b blue_b blue_b";
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .container__gc, .card{
+  .container__gc,
+  .card__container {
     display: contents;
   }
-  
+  .card__container,
   .container__gc {
-    
     display: grid;
-    grid-template-rows: repeat(6,15rem);
-    grid-template-columns: repeat(2,48%) ;
+    grid-template-rows: repeat(6, 15rem);
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas:
+      "glass red_h"
+      "glass red_b"
+      "glass red_b"
+      "green_h blue_h"
+      "green_b blue_b"
+      "green_b blue_b";
+  }
 
-  }
- 
-  
-  /* .glass{
-    margin-top: 5rem;
-    margin-right: 1rem;
-    margin-bottom: 0.7rem;
-    grid-row: 1/4;
-    grid-column: 1/2;
-  }
- 
-  .container__gc:nth-child(2n){
-    grid-row: 1/2;
-    grid-column: 1/4;
-  }
-  .container__gc:nth-child(3n){
-    
-    grid-row: 4/5;
-    grid-column: 1/2;
- 
+  /*  .container__gc {
+    display: grid;
+    grid-column-gap: 1rem;
+    grid-template-rows: repeat(6, 15rem);
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas:
+      "glass red_h"
+      "glass red_b"
+      "glass red_b"
+      "green_h blue_h"
+      "green_b blue_b"
+      "green_b blue_b";
   } */
 
- /*  .card__header--red{
-    
-    grid-row: 1/2;
-    grid-column: 1/4;
-   
+  .glass {
+    grid-area: glass;
+    margin-top: 1rem;
   }
- .card__body--red{
-  
-  grid-row: 2/4;
-  grid-column: 1/4;
-  
-  
-
-} */
-
-/* .card__header--green{
-  grid-row: 4/5;
-  grid-column: 1/2;
- 
 }
-.card__body--green{
-  
-  grid-column: 1/4
-}
-} */
-
-/*  .card--blue {
-   
-  }
-  .card--green {
-    grid-area: card--green;
-  } */
-
-/*  :nth-child(3){
-  grid-row: 2/3;
-  grid-column: 3/5; 
-  grid-area: card_header--red; 
-}
-:nth-child(4/5){
-  grid-row: 3/5;
-  grid-column: 3/5; 
-  grid-area: card_body--red;
-}
-.card__header--blue{
-  grid-row: 6/7;
-  grid-column: 1/3;
-}
-.card__body--blue{
-  grid-row: 7/10;
-  grid-column: 1/3;
-}
-.card__header--green{
-  grid-row: 6/7;
-  grid-column: 3/5;
-}
-.card__body--green{
-  grid-row: 7/10;
-  grid-column: 3/5;
-
-}
- 
-
-   .card--red {
-  grid-row: 2/6;
-  grid-column: 3/5;
-}   
-
-   .card--blue {
-  grid-row: 6/10;
-  grid-column: 1/3;
-}
-.card--green { 
-  grid-row: 6/10;
-  grid-column: 3/5;} 
-}<*/ 

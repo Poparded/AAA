@@ -5,21 +5,18 @@
   /*   background-color: var(--hue-3); */
   background-color: red;
 }
-.card {
-  position: relative;
+.card__container {
   display: grid;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 
 .card__header {
+  position: relative;
   border-top-right-radius: 12px;
   border-top-left-radius: 12px;
   color: var(--white);
   padding: 1rem;
-  padding-top: 4rem;
-  margin-top: 4rem ;
-  
+  padding-top: 3rem;
+  margin-top: 4rem;
 }
 
 .card__icon {
@@ -54,7 +51,6 @@
 }
 /* Card blue */
 .card__header--blue {
-  
   text-transform: capitalize;
   background-image: linear-gradient(
     to bottom right,
@@ -126,8 +122,10 @@ hr.solid--blue {
   .card__button--green {
     right: 21.5%;
   }
-  .card__icon--red,.card__icon--blue,
-  .card__button--red, .card__button--blue {
+  .card__icon--red,
+  .card__icon--blue,
+  .card__button--red,
+  .card__button--blue {
     right: 5.5%;
   }
 }
