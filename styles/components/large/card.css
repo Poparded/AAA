@@ -1,5 +1,5 @@
 /* card  */
-.card{
+.card {
   position: relative;
 }
 
@@ -18,52 +18,46 @@
   );
 }
 
-.card--danger header{
+.card--danger header {
   background-image: linear-gradient(
-   to bottom right,
-   hsl(var(--hue-3), 40%, 30%),
-   hsl(var(--hue-3), 40%, 65%));
-   
- }
+    to bottom right,
+    hsl(var(--hue-3), 40%, 30%),
+    hsl(var(--hue-3), 40%, 65%)
+  );
+}
 
- .card--success header{
+.card--success header {
   background-image: linear-gradient(
     to bottom right,
     hsl(var(--hue-4), 50%, 30%),
     hsl(var(--hue-4), 50%, 60%)
   );
-   
- }
-
+}
 
 .card__icon {
-  
   border-radius: 50%;
-  padding: 0.6rem; 
+  padding: 0.6rem;
   right: 0rem;
   top: 0%;
   transform: translate(-10%, 185%);
   position: absolute;
-  background-color: hsl(var(--hue-1), 50%, 60%); 
-  opacity: 1.0;
+  background-color: hsl(var(--hue-1), 50%, 60%);
+  opacity: 1;
   z-index: 2;
-  
 }
-.card__icon--blue{
+.card__icon--blue {
   transform: translate(-10%, 140%);
 }
-.card--danger img{
-  
-  color:hsl(var(--hue-3), 40%, 30%) ;
+.card--danger img {
+  color: hsl(var(--hue-3), 40%, 30%);
   background-color: hsl(var(--hue-3), 40%, 40%);
   border-radius: 50%;
   padding: 0.5rem;
   overflow: auto;
 }
 
-.card--success img{
-   
-  color:hsl(var(--hue-4), 50%, 60%);
+.card--success img {
+  color: hsl(var(--hue-4), 50%, 60%);
   background-color: hsl(var(--hue-4), 50%, 60%);
   border-radius: 50%;
   padding: 0.4rem;
@@ -75,31 +69,30 @@
   border-bottom-right-radius: 1rem;
   padding: 3rem;
   position: relative;
-  background-color: var(--white); 
-  opacity: 0.8; 
+  background-color: var(--white);
+  opacity: 0.8;
   z-index: 1;
-  
 }
 
 p.card__paragraph {
- 
   margin-bottom: 1rem;
-
 }
 
-.hr{
+.hr {
   background-color: hsl(var(--hue-1), 50%, 60%);
 }
 
-.card--danger hr{
-  
+.card--danger hr {
   color: hsl(var(--hue-3), 40%, 40%);
 }
 
-.card--success hr{
+.card--success hr {
   color: hsl(var(--hue-4), 50%, 60%);
- }
+}
 
+a:visited {
+  color: white;
+}
 .card__button {
   border-radius: 8%;
   position: absolute;
@@ -114,44 +107,40 @@ p.card__paragraph {
 }
 
 .card--danger a {
-  
   background-color: hsl(var(--hue-3), 40%, 40%);
+}
+.card--danger  a:hover{
   
 }
 
- .card--success a {
-   
-   background-color: hsl(var(--hue-4), 50%, 60%);
-   
- }
+.card--success a {
+  background-color: hsl(var(--hue-4), 50%, 60%);
+}
 
 @media screen and (min-width: 768px) {
-   .card__icon{
+  .card__icon {
     transform: translate(-10%, 210%);
   }
 
-  .card__icon--blue{
+  .card__icon--blue {
     transform: translate(-10%, 160%);
   }
-  .card__button{
+  .card__button {
     transform: translate(-10%, -130%);
   }
-  
 }
 
 @media screen and (min-width: 1024px) {
-   .card__header--blue{
+  .card__header--blue {
     height: 9.4rem;
   }
-  .card__header{
+  .card__header {
     margin-top: 0;
   }
-  .card__body{
+  .card__body {
     margin-bottom: 0;
   }
-  .card__icon{
+  .card__icon {
     transform: translate(-10%, 150%);
   }
-  
 }
-  

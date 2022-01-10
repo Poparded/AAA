@@ -1,64 +1,56 @@
-.container__glass__card{
-    display: grid;
-    grid-template-rows:  repeat(4, 40rem);
-    grid-template-columns: repeat(1, 100%);
-    grid-template-areas: 
+.container__glass__card {
+  display: grid;
+  grid-template-rows: repeat(4, 40rem);
+  grid-template-columns: repeat(1, 100%);
+  grid-template-areas:
     "glass"
     "red_h"
     "green_h"
-    "blue_h"
-        
-       
+    "blue_h";
 }
-.glass{
-    grid-area: glass;
+.glass {
+  grid-area: glass;
 }
-.card--danger{
-    grid-area: red_h;
+.card--danger {
+  grid-area: red_h;
 }
-.card--success{
-    grid-area: green_h;
+.card--success {
+  grid-area: green_h;
 }
-.card--blue{
-    grid-area: blue_h;
-}
-@media screen and (min-width: 448) {
-    .container__glass__card{
-        grid-template-rows:  repeat(4, 37rem);
-    }
+.card--blue {
+  grid-area: blue_h;
 }
 
-@media screen and (min-width:768px) {
-    .container__glass__card{
-        
-        grid-template-rows: repeat(4, 37rem);
-        grid-template-columns: repeat(5, 20%);
-        grid-template-areas: 
-        "glass glass glass glass glass"
-        ". red_h red_h red_h red_h"
-        "green_h green_h green_h green_h ."
-        ". blue_h blue_h blue_h blue_h"
-    
-        ;
-    }  
-    
+@media screen and (min-width: 448px) {
+  .container__glass__card {
+    grid-template-rows: repeat(4, 37rem);
+  }
+}
+@media screen and (min-width:480px){
+    .container__glass__card {
+        grid-template-rows: repeat(4, 38rem);
+}
+
+@media screen and (min-width: 768px) {
+  .container__glass__card {
+    grid-template-rows: repeat(4, 37rem);
+    grid-template-columns: repeat(5, 20%);
+    grid-template-areas:
+      "glass glass glass glass ."
+      ". red_h red_h red_h red_h"
+      "green_h green_h green_h green_h ."
+      ". blue_h blue_h blue_h blue_h";
+  }
 }
 
 @media screen and (min-width: 1024px) {
-  
-    
-     .container__glass__card{
-        display: grid;
-        grid-gap: 1.5rem;
-        grid-template-rows: repeat(2, 38.2rem);
-        grid-template-columns: repeat(2, 50%);
-        grid-template-areas: 
-        "glass red_h"
-        "green_h blue_h"
-        
-        ;
-        
-    }  
-    
-    
+  .container__glass__card {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-rows: repeat(2, 38.2rem);
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas:
+      "glass red_h"
+      "green_h blue_h";
+  }
 }
