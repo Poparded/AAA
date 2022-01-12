@@ -4,7 +4,6 @@
 }
 .quote {
   padding: 1rem;
-  position: relative;
 }
 .quote--img {
   max-width: 100%;
@@ -31,43 +30,19 @@
   border-bottom-left-radius: 10px;
 }
 
-.quote__caption {
-  margin-left: 1rem;
-  font-weight: 900;
-}
-.quote__caption > h2 {
+.quote__caption h2 {
   font-weight: 900;
   font-size: 2.6rem;
   height: 5rem;
+  margin-left: 1rem;
 }
 .quote--author {
   font-size: 2rem;
   font-weight: 500;
   margin-left: 40%;
   margin-top: 13rem;
-
-  /* width: 30rem; */
-  /*  top: 20rem; */
-
-  /* left: 60%;
-  width: 20rem;
-  position: absolute; */
 }
 
-/* @media only screen and (min-width: 768px) {
-  .photo_content {
-    width: 10rem;
-  }
-  .container__photo {
-    width: 30vh;
-  }
-  .photo {
-    width: 30vh;
-  }
-} */
-
-/* @media screen and (max-height: 1190px) {
-} */
 @media screen and (min-width: 550px) {
   .quote--author {
     margin-left: 50%;
@@ -76,7 +51,6 @@
 @media only screen and (min-width: 1024px) {
   .quote_content {
     width: 75%;
-
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -86,14 +60,6 @@
   }
   .quote--img {
     padding-left: 18%;
-  }
-  .photo__caption__author {
-    /*  font-size: 2rem;
-    bottom: 10%;
-    left: 20%;
-    position: absolute;
-    width: 60%;
-    transform: translate(-10%, -120%); */
   }
 }
 @media only screen and (min-width: 1200px) {
