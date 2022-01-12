@@ -11,51 +11,51 @@
 :first-child {
   grid-area: glass;
 }
-:nth-child(2){
+:nth-child(2) {
   grid-area: red_h;
 }
-:nth-child(3){
+:nth-child(3) {
   grid-area: green_h;
 }
 :nth-child(4) {
   grid-area: blue_h;
 }
 @media screen and (min-width: 362px) {
-  .container__glass__card{
+  .container__glass__card {
     grid-template-rows: repeat(4, 40rem);
   }
-  
 }
 @media screen and (min-width: 448px) {
   .container__glass__card {
     grid-template-rows: repeat(4, 37rem);
   }
 }
-@media screen and (min-width:480px){
-    .container__glass__card {
-        grid-template-rows: repeat(4, 38rem);
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .container__glass__card {
-    grid-template-rows: repeat(4, 37rem);
-    grid-template-columns: repeat(5, 20%);
-    grid-template-areas:
-      "glass glass glass glass ."
-      ". red_h red_h red_h red_h"
-      "green_h green_h green_h green_h ."
-      ". blue_h blue_h blue_h blue_h";
+    grid-template-rows: repeat(4, 38rem);
   }
-}
 
-@media screen and (min-width: 1024px) {
-  .container__glass__card {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-rows: repeat(2, 38.2rem);
-    grid-template-columns: repeat(2, 50%);
-    grid-template-areas:
-      "glass red_h"
-      "green_h blue_h";
+  @media screen and (min-width: 768px) {
+    .container__glass__card {
+      grid-template-rows: repeat(4, 37rem);
+      grid-template-columns: repeat(5, 20%);
+      grid-template-areas:
+        "glass glass glass glass ."
+        ". red_h red_h red_h red_h"
+        "green_h green_h green_h green_h ."
+        ". blue_h blue_h blue_h blue_h";
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .container__glass__card {
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-rows: repeat(2, 38.2rem);
+      grid-template-columns: repeat(2, 50%);
+      grid-template-areas:
+        "glass red_h"
+        "green_h blue_h";
+    }
   }
 }

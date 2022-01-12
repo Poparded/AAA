@@ -42,7 +42,6 @@
   transform: translate(-10%, 185%);
   position: absolute;
   background-color: hsl(var(--hue-1), 50%, 60%);
-  opacity: 1;
   z-index: 2;
 }
 .card__icon--blue {
@@ -53,7 +52,6 @@
   background-color: hsl(var(--hue-3), 40%, 40%);
   border-radius: 50%;
   padding: 0.5rem;
-  overflow: auto;
 }
 
 .card--success img {
@@ -61,7 +59,6 @@
   background-color: hsl(var(--hue-4), 50%, 60%);
   border-radius: 50%;
   padding: 0.4rem;
-  overflow: auto;
 }
 
 .card__body {
