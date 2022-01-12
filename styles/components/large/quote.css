@@ -2,11 +2,11 @@
   padding-top: 10rem;
   position: relative;
 }
-.photo {
+.quote {
   padding: 1rem;
   position: relative;
 }
-.photo--img {
+.quote--img {
   max-width: 100%;
   height: auto;
   padding-top: 1rem;
@@ -15,7 +15,7 @@
 }
 
 /* Ger rutan brevid tjejen färg och padding */
-.photo__color--blue {
+.quote__color--blue {
   background-color: hsl(var(--hue-1), 80%, 30%);
   padding: 2rem;
   border-top-right-radius: 10px;
@@ -23,7 +23,7 @@
 }
 
 /* Gör citatet ljusblått */
-.photo__caption--lightblue {
+.quote__caption--lightblue {
   background-color: hsl(var(--hue-1), 50%, 75%);
   height: 25rem;
   position: relative;
@@ -31,16 +31,16 @@
   border-bottom-left-radius: 10px;
 }
 
-.photo__caption {
+.quote__caption {
   margin-left: 1rem;
   font-weight: 900;
 }
-.photo__caption > h2 {
+.quote__caption > h2 {
   font-weight: 900;
   font-size: 2.6rem;
   height: 5rem;
 }
-.photo__caption__author {
+.quote--author {
   font-size: 2rem;
   font-weight: 500;
   margin-left: 40%;
@@ -69,22 +69,22 @@
 /* @media screen and (max-height: 1190px) {
 } */
 @media screen and (min-width: 550px) {
-  .photo__caption__author {
+  .quote--author {
     margin-left: 50%;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .photo_content {
+  .quote_content {
     width: 75%;
 
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  .photo {
+  .quote {
     padding-bottom: 5rem;
   }
-  .photo--img {
+  .quote--img {
     padding-left: 18%;
   }
   .photo__caption__author {
@@ -97,7 +97,7 @@
   }
 }
 @media only screen and (min-width: 1200px) {
-  .photo__caption__author {
+  .quote--author {
     padding-left: 18rem;
   }
 }
