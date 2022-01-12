@@ -8,16 +8,16 @@
     "green_h"
     "blue_h";
 }
-.glass {
+:first-child {
   grid-area: glass;
 }
-.card--red {
+:nth-child(2){
   grid-area: red_h;
 }
-.card--green {
+:nth-child(3){
   grid-area: green_h;
 }
-.card--blue {
+:nth-child(4) {
   grid-area: blue_h;
 }
 @media screen and (min-width: 362px) {
