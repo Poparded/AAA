@@ -11,10 +11,10 @@
 .glass {
   grid-area: glass;
 }
-.card--danger {
+.card--red {
   grid-area: red_h;
 }
-.card--success {
+.card--green {
   grid-area: green_h;
 }
 .card--blue {
