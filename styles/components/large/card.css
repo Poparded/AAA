@@ -119,13 +119,13 @@ a:hover{
   background-color: hsl(var(--hue-3), 40%, 40%);
 }
 .card--danger  a:hover{
-  
+  background-color: hsl(var(--hue-4), 50%, 60%);
 }
 
    
-   background-color: hsl(var(--hue-4), 50%, 60%);
+ 
    
- }
+
 
 @media screen and (min-width: 768px) {
   .card__icon {
