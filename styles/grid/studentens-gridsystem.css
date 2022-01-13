@@ -8,19 +8,18 @@
     "green_c"
     "blue_c";
 }
-.container__glass__card:nth-child(1) {
+.glass:nth-child(1) {
   grid-area: glass;
 }
-.container__glass__card:nth-child(2) {
+.card:nth-child(2) {
   grid-area: red_c;
 }
-.container__glass__card:nth-child(3) {
+.card:nth-child(3) {
   grid-area: green_c;
 }
-.container__glass__card:nth-child(4) {
+.card:nth-child(4) {
   grid-area: blue_c;
 }
-
 @media screen and (min-width: 362px) {
   .container__glass__card {
     grid-template-rows: repeat(4, 40rem);
