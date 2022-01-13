@@ -9,6 +9,7 @@
   height: auto;
   margin-left: 2rem;
   margin-bottom: -5rem;
+  
 }
 
 /* Ger rutan brevid tjejen färg och padding */
@@ -23,9 +24,10 @@
 .quote__caption--lightblue {
   background-color: hsl(var(--hue-1), 50%, 75%);
   height: 25rem;
-  position: relative;
+  position: relative; 
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+ 
 }
 
 .quote__caption h2 {

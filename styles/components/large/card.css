@@ -104,14 +104,23 @@ a:hover {
   text-decoration: none;
   background-color: var(--white);
   color: hsl(var(--hue-1), 50%, 60%);
+  border-style: solid;
+  border-color: hsl(var(--hue-1), 50%, 60%);
+  
+  
 }
 .card--danger a:hover {
   color: hsl(var(--hue-3), 40%, 40%);
   background-color: var(--white);
+  border-style: solid;
+  border-color: hsl(var(--hue-3), 40%, 40%);
+  
 }
 .card--success a:hover{
   color:hsl(var(--hue-4), 50%, 60%); 
   background-color: var(--white);
+  border-style: solid;
+  border-color: (var(--hue-4), 50%, 60%);
 }
 
 .card--danger a {
