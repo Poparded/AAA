@@ -38,7 +38,7 @@
   border-radius: 50%;
   padding: 0.6rem;
   right: 0rem;
-  top: 0%;
+  top: 0%; 
   transform: translate(-10%, 185%);
   position: absolute;
   background-color: hsl(var(--hue-1), 50%, 60%);
@@ -48,14 +48,14 @@
   transform: translate(-10%, 140%);
 }
 .card--danger img {
-  color: hsl(var(--hue-3), 40%, 30%);
+  
   background-color: hsl(var(--hue-3), 40%, 40%);
   border-radius: 50%;
   padding: 0.5rem;
 }
 
 .card--success img {
-  color: hsl(var(--hue-4), 50%, 60%);
+
   background-color: hsl(var(--hue-4), 50%, 60%);
   border-radius: 50%;
   padding: 0.4rem;
@@ -64,7 +64,7 @@
 .card__body {
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  padding: 3rem;
+  padding: 3rem; 
   position: relative;
   background-color: var(--white);
   opacity: 0.8;
@@ -91,7 +91,7 @@ a:visited {
   color: white;
 }
 .card__button {
-  border-radius: 8%;
+  border-radius: 5px;
   position: absolute;
   right: 0;
   height: 30px;
@@ -111,11 +111,15 @@ a:hover {
   color: hsl(var(--hue-3), 40%, 40%);
   background-color: var(--white);
 }
+.card--success a:hover{
+  color:hsl(var(--hue-4), 50%, 60%); 
+  background-color: var(--white);
+}
 
 .card--danger a {
   background-color: hsl(var(--hue-3), 40%, 40%);
 }
-.card--danger a:hover {
+.card--success a {
   background-color: hsl(var(--hue-4), 50%, 60%);
 }
 

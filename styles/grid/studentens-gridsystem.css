@@ -4,22 +4,23 @@
   grid-template-columns: repeat(1, 100%);
   grid-template-areas:
     "glass"
-    "red_h"
-    "green_h"
-    "blue_h";
+    "red_c"
+    "green_c"
+    "blue_c";
 }
-:first-child {
+.container__glass__card:nth-child(1) {
   grid-area: glass;
 }
-:nth-child(2) {
-  grid-area: red_h;
+.container__glass__card:nth-child(2) {
+  grid-area: red_c;
 }
-:nth-child(3) {
-  grid-area: green_h;
+.container__glass__card:nth-child(3) {
+  grid-area: green_c;
 }
-:nth-child(4) {
-  grid-area: blue_h;
+.container__glass__card:nth-child(4) {
+  grid-area: blue_c;
 }
+
 @media screen and (min-width: 362px) {
   .container__glass__card {
     grid-template-rows: repeat(4, 40rem);
@@ -41,9 +42,9 @@
       grid-template-columns: repeat(5, 20%);
       grid-template-areas:
         "glass glass glass glass ."
-        ". red_h red_h red_h red_h"
-        "green_h green_h green_h green_h ."
-        ". blue_h blue_h blue_h blue_h";
+        ". red_c red_c red_c red_c"
+        "green_c green_c green_c green_c ."
+        ". blue_c blue_c blue_c blue_c";
     }
   }
 
@@ -54,8 +55,8 @@
       grid-template-rows: repeat(2, 38.2rem);
       grid-template-columns: repeat(2, 50%);
       grid-template-areas:
-        "glass red_h"
-        "green_h blue_h";
+        "glass red_c"
+        "green_c blue_c";
     }
   }
 }
