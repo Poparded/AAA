@@ -23,8 +23,12 @@
 /* Gör citatet ljusblått */
 .quote__caption--lightblue {
   background-color: hsl(var(--hue-1), 50%, 75%);
+<<<<<<< HEAD
   height: 25rem;
   position: relative; 
+=======
+  position: relative;
+>>>>>>> 2d5104ea3715884247efd80f8e2e480a0995a346
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
  
