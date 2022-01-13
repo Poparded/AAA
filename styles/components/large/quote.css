@@ -22,7 +22,6 @@
 /* Gör citatet ljusblått */
 .quote__caption--lightblue {
   background-color: hsl(var(--hue-1), 50%, 75%);
-  height: 25rem;
   position: relative;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
